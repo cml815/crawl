@@ -1,8 +1,48 @@
 @import 'reset.scss';
 @import 'grid.scss';
+@import 'colortype.scss';
 
+body {
+    background-color: $white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $sans;
+}
+
+p {
+    font-family: $serif;
+}
+
+li {
+    font-family: $serif;
+}
+
+ul {
+    list-style: none;
+}
 .page-intro {
     height: 50vh;
+
+}
+
+.container-button {
+  }
+
+/* https://css-tricks.com/css3-gradients/ */
+
+#gradient {
+width: 0;
+height: 0;
+border-style: solid;
+border-width: 75px 100vw 0 0;
+border-color: $logo $blackblue transparent transparent;
+transform: scale(1.0001);
+  }
+
+.container-button-diagonal {
+    width:25%;
+    background: linear-gradient(to top right, #fff calc(50% - 1px), #aaa, #fff calc(50% + 1px) );
 }
 /* .wrapper {
   min-height: 100vh;
