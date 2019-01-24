@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>No Framework Website</title>
 <link rel="stylesheet" href="./assets/styles/main.css">
+<script src="../src/scripts/main.js" type="text/javascript"></script>
 </head>
 <div class="lead">
     <h1>How Work Lives.</h1>
@@ -29,5 +30,41 @@
                     <option value="products">Fund Raising</option>
                     <option value="suppliers">Fun Stuff</option>
                   </select>
+    </section>
+    <section>
+        <ul id="project">
+            <li id="title"></li>
+            <li id="type"></li>
+            <li id="skills"></li>
+        </ul>
+        <script>
+        var sample, i, x = "";
+        sample = {
+        id: 0 
+        skills:[ "Content Marketing", "Research Intensive", "Optimized" ]
+        "brands":[ "Benefiber", "Overture", "Colgate" ]
+    };
+
+    for (i in sample)
+
+
+
+        </script>
+    </section>
+    <section>
+        <p id="portfolio-item"></p>
+        <script>
+    var myObj, i, x = "";
+    myObj = {
+        "category":"Medical Editorial Style",
+        "author":"Caroline Leopold",
+        "brands":[ "Benefiber", "Overture", "Colgate" ]
+    };
+
+    for (i in myObj.brands) {
+    x += myObj.brands[i] + "<br>";
+  }
+    document.getElementById("portfolio-item").innerHTML = x;
+</script>
     </section>
 </div>
